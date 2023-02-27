@@ -1,0 +1,114 @@
+This project was built using a MAMP stack. I have only included the htdocs folder for simplicy and because that is where my work is.
+
+This project relies on a database call challenge that contains a table named weather. Following is the table creation script.
+
+CREATE TABLE `weather` (
+  `id` int(11) NOT NULL,
+  `city` varchar(255) NOT NULL,
+  `state` varchar(255) NOT NULL,
+  `temp` int(11) NOT NULL COMMENT 'in Fahrenheit ',
+  `condition_curr` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+The following is the script I used to seed the database
+
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Saratoga Springs','Utah', 33, 'Sunny');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Salt Lake City','Utah', 31, 'Cloudy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('West Valley City','Utah', 30, 'Snowy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('West Jordan','Utah', 32, 'Clear');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Provo','Utah', 35, 'Windy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Orem','Utah', 36, 'Partly Cloudy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Sandy','Utah', 40, 'Rainy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('St. George','Utah', 47, 'Sunny');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Ogden','Utah', 29, 'Clear');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Layton','Utah', 28, 'Snowy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('South Jordan','Utah', 33, 'Windy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Lehi','Utah', 34, 'Foggy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Millcreek','Utah', 35, 'Thunder Storm');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Taylorsville','Utah', 36, 'Partly Cloudy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Herriman','Utah', 32, 'Sunny');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Logan','Utah', 31, 'Sunny');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Murray','Utah', 33, 'Windy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Draper','Utah', 36, 'Sunny');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Bountiful','Utah', 31, 'Snowy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Riverton','Utah', 33, 'Clear');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Eagle Mountain','Utah', 35, 'Partly Cloudy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Spanish Fork','Utah', 23, 'Windy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Roy','Utah', 24, 'Snowy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Pleasant Grove','Utah', 25, 'Partly Cloudy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Kearns','Utah', 26, 'Cloudy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Midvale','Utah', 27, 'Clear');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Tooele','Utah', 28, 'Foggy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Springville','Utah', 29, 'Sunny');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Cedar City','Utah', 30, 'Mostly Sunny');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Cottonwood Heights','Utah', 31, 'Heavy Winds');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('American Fork','Utah', 32, 'Wind Storm');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Kaysville','Utah', 33, 'Blizzard');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Clearfield','Utah', 34, 'Clear');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Holladay','Utah', 35, 'Raining');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Syracuse','Utah', 36, 'Sunny');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Magna','Utah', 37, 'Partly Cloudy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Washington','Utah', 38, 'Drizzle');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('South Salt Lake','Utah', 39, 'Thunder Storm');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Farmington','Utah', 40, 'Foggy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Clinton','Utah', 41, 'Raining');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Orlando','Florida', 78, 'Sunny');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Los Angeles ','California', 68, 'Smoggy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Seattle','Washington', 47, 'Heavy Rain');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('New York City','New York', 41, 'Foggy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Atlanta','Georgia', 65, 'Light Wind');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Denver','Colorado', 38, 'Snowy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Dallas','Texas', 63, 'Sunny');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Las Vegas','Nevada', 59, 'Partly Cloudy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('Chicago','Illinois', 32, 'Cloudy');
+INSERT INTO `weather` (city,state,temp,condition_curr)
+VALUES ('New Orleans','Louisiana', 63, 'Windy');
